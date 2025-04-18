@@ -1,19 +1,27 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import React from 'react';
+import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './home.jsx';
 import Blog from './blog.jsx';
 import About from './about.jsx';
+import Layout from './layout.jsx';
 
 function App() {
+    const [blogIndex, setBlogIndex] = useState(-1);
+  
   return (
+    <div className='min-h-screenflex flex-col'>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/about" element={<About />} />
+      <Routes>  
+        <Route path='/' element={<Layout blogIndex={blogIndex} setBlogIndex={setBlogIndex}/>}>
+        <Route index element={<Home/>} />
+        <Route path="/blog" element={<Blog blogIndex={blogIndex}/>} />
+        <Route path="/about" element={<About/>} />
+        </Route>
       </Routes>
     </BrowserRouter>
+
+    </div>
   );
 }
 

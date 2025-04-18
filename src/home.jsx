@@ -1,7 +1,5 @@
-import {screen} from './common.jsx';
-
 export default function home() {
-  return screen(<div className='text-center'>
-    Welcome to my blog!
-  </div>);
+  return <div className='flex flex-col gap-10'>
+    <img className='w-100' src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Direct_lighting.png"></img>
+  </div>;
 }
