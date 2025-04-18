@@ -1,7 +1,23 @@
 import {screen} from './common.jsx';
+import { useState } from 'react';
+
+let items;
 
 export default function blog() {
-  return screen((<div>`
+  const [blogIndex, setBlogIndex] = useState(-1);
+
+  return screen((<div>
     you can find a list of blogs on the right panel
-  `</div>), <div className='flex flex-col'>Performant BVH for OpenGL (and CPU)</div>);
+  </div>), <ol className='list-decimal'>
+        {items.map((title, index) => (
+          <li key={index}>
+            <button
+              onClick={() => setBlogIndex(index)}
+              className="btn btn-soft flex w-full justify-start text-left"
+            >{title}</button>
+          </li>
+        ))}
+      </ol>);
 }
+
+items = ["Performant BVH for OpenGL (and CPU)", "B", "C"];
