@@ -10,11 +10,11 @@
     color-scheme: "dark";
     --color-base-100: oklch(0.6 0.1049 172.79);
     --color-base-200: oklch(0.5 0.1049 172.79);
-    --color-base-300: oklch(0.4 0.1049 172.79);
+    --color-base-300: oklch(0.3 0.5 160);
     --color-base-content: oklch(0% 0.042 264.695);
-    --color-primary: #2C2891;
+    --color-primary: oklch(0.36 0.41656 205.81);
     --color-primary-content: #FFFD95;
-    --color-secondary: oklch(0.57 0.15 25.68);
+    --color-secondary: oklch(0.57 0.17 25.68);
     --color-secondary-content: oklch(98% 0.003 247.858);
     --color-accent: oklch(84% 0.143 164.978);
     --color-accent-content: oklch(26% 0.051 172.552);

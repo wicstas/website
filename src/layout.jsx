@@ -5,7 +5,7 @@ export default function layout() {
     const navigate = useNavigate();
 
     return <div className='flex flex-col w-screen h-screen'>
-      <div className="text-center py-4 text-3xl"> A common Rui's <span className="hidden lg:inline text-[10px]"> (somewhat uncommon)</span> blog</div>
+      <div className="text-center py-8 text-3xl tracking-tight"> A common Rui's <span className="hidden lg:inline-block text-[20px] rotate-340 absolute -translate-x-20 translate-y-2"> (somewhat uncommon)</span><span className='inline-block w-30'/>blog</div>
       <div className="flex-none h-1 bg-secondary" />
 
       <div className='flex grow md:flex-row flex-col px-10 gap-5 lg:gap-10'>
@@ -28,13 +28,13 @@ export default function layout() {
           </div>
         </div>
 
-        <div className="flex-none w-1 bg-base-300" />
+        <div className="flex-none w-1 bg-primary" />
 
         <main className="lg:p-5 flex-[4] lg:flex-[3] font-mono">
         <Outlet />
         </main>
 
-        <div className="flex-none w-1 bg-base-300" />
+        <div className="flex-none w-1 bg-primary" />
         <div className="flex-[1]">
         </div>
       </div>
