@@ -5,5 +5,5 @@ export default function blog() {
   const { slug } = useParams();
   const blog = blogs.find((b) => b.slug === slug);
 
-    return <div className='text-center'>{blog.content}</div>;
+    return <div className='text-left'>{blog.content}</div>;
 }
