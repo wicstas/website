@@ -1,6 +1,9 @@
+import { useParams } from 'react-router-dom';
 import { blogs } from './blog-content.jsx';
 
-export default function blog({blogIndex}) {
-    return blogIndex === -1 ? <div className='text-center'>Shouldn't be reached</div> :
-      <div className='text-center'>{blogs[blogIndex]}</div>;
+export default function blog() {
+  const { slug } = useParams();
+  const blog = blogs.find((b) => b.slug === slug);
+
+    return <div className='text-center'>{blog.content}</div>;
 }

@@ -1,7 +1,7 @@
 import { Link, Outlet, useNavigate } from 'react-router-dom';
 import { titles } from './blog-content.jsx';
 
-export default function layout({blogIndex, setBlogIndex}) {  
+export default function layout() {  
     const navigate = useNavigate();
 
     return <div>
@@ -16,17 +16,15 @@ export default function layout({blogIndex, setBlogIndex}) {
         <Link to="/about" className="btn btn-link btn-lg">[About]</Link>
       </nav>
       <div className='text-center text-xl m-2'>Blogs</div>
-      <ol className='w-full list-decimal space-y-2'>
-        {titles.map((title, index) => (
-          <li key={index}>
+      <div className='w-full list-decimal space-y-2'>
+        {titles.map(({slug, title}, index) => (
             <button
-              onClick={() => {setBlogIndex(index); navigate(`/blog`)}}
-              className={`btn btn-outline flex w-full justify-start text-left h-auto ${
-              blogIndex === index ? 'btn-active' : ''}`}
+              key={index}
+              onClick={() => {navigate(`/blog/${slug}`)}}
+              className={`btn btn-outline flex w-full justify-start text-left h-auto`}
             >{title}</button>
-          </li>
         ))}
-      </ol>
+      </div>
       </div>
 
       <main className="lg:p-5 flex-[4] lg:flex-[3]">

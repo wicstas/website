@@ -13,10 +13,10 @@ function App() {
     <div className='min-h-screenflex flex-col'>
     <BrowserRouter>
       <Routes>  
-        <Route path='/' element={<Layout blogIndex={blogIndex} setBlogIndex={setBlogIndex}/>}>
-        <Route index element={<Home/>} />
-        <Route path="/blog" element={<Blog blogIndex={blogIndex}/>} />
-        <Route path="/about" element={<About/>} />
+        <Route path='/' element={<Layout/>}>
+          <Route index element={<Home/>} />
+          <Route path="/blog/:slug" element={<Blog />} />
+          <Route path="/about" element={<About/>} />
         </Route>
       </Routes>
     </BrowserRouter>
