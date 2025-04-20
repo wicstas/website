@@ -12,7 +12,6 @@ function App() {
     const [blogIndex, setBlogIndex] = useState(-1);
   
   return (
-    <div className='min-h-screenflex flex-col'>
     <BrowserRouter>
       <Routes>  
         <Route path='/' element={<Layout/>}>
@@ -23,8 +22,6 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
-
-    </div>
   );
 }
 

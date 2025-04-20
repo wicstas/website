@@ -2,7 +2,7 @@ import { Link, Outlet } from 'react-router-dom';
 import StarCanvas from './star.jsx';
 
 export default function Layout() {
-  return <div className='flex flex-col w-screen h-screen font-sans'>
+  return <div className='flex flex-col w-screen h-screen font-shortstack'>
     <div className='flex h-[120%] lg:flex-row flex-col gap-5 lg:gap-10'>
       
       <div className='lg:py-5 flex-[1] flex flex-col bg-base-200'>
