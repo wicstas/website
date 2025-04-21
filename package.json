@@ -4,6 +4,7 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.4",
     "@vitejs/plugin-react": "^4.4.1",
+    "animate.css": "^4.1.1",
     "katex": "^0.16.22",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

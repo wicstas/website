@@ -5,4 +5,10 @@ export default defineConfig({
   plugins: [
     react(),
   ],
+
+  server: {
+    fs: {
+      strict: true,
+    },
+  },
 });

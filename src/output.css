@@ -1085,12 +1085,6 @@
       }
     }
   }
-  .absolute {
-    position: absolute;
-  }
-  .relative {
-    position: relative;
-  }
   .textarea {
     border: var(--border) solid #0000;
     min-height: calc(0.25rem * 20);
@@ -1206,9 +1200,6 @@
       }
     }
   }
-  .ml-auto {
-    margin-left: auto;
-  }
   .badge {
     display: inline-flex;
     align-items: center;
@@ -1323,6 +1314,9 @@
   .table {
     display: table;
   }
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
   .h-\[120\%\] {
     height: 120%;
   }
@@ -1338,17 +1332,11 @@
   .min-h-10 {
     min-height: calc(var(--spacing) * 10);
   }
-  .w-10 {
-    width: calc(var(--spacing) * 10);
-  }
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
   .w-100 {
     width: calc(var(--spacing) * 100);
-  }
-  .w-auto {
-    width: auto;
   }
   .w-full {
     width: 100%;
@@ -1425,23 +1413,23 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .bg-\[\/foliage_pack\/tree_0\.png\] {
-    background-color: /foliage pack/tree 0.png;
-  }
   .bg-base-200 {
     background-color: var(--color-base-200);
-  }
-  .bg-\[url\(\'\/foliage_pack\/tree_0\.png\'\)\] {
-    background-image: url('/foliage_pack/tree_0.png');
-  }
-  .bg-\[url\(\/foliage_pack\/tree_0\.png\)\] {
-    background-image: url(/foliage_pack/tree_0.png);
   }
   .bg-contain {
     background-size: contain;
   }
+  .bg-repeat-x {
+    background-repeat: repeat-x;
+  }
   .bg-repeat-y {
     background-repeat: repeat-y;
+  }
+  .py-10 {
+    padding-block: calc(var(--spacing) * 10);
+  }
+  .py-40 {
+    padding-block: calc(var(--spacing) * 40);
   }
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
@@ -1517,6 +1505,21 @@
     --btn-color: var(--color-primary);
     --btn-fg: var(--color-primary-content);
   }
+  .lg\:h-full {
+    @media (width >= 64rem) {
+      height: 100%;
+    }
+  }
+  .lg\:w-20 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:w-auto {
+    @media (width >= 64rem) {
+      width: auto;
+    }
+  }
   .lg\:flex-\[3\] {
     @media (width >= 64rem) {
       flex: 3;
@@ -1530,6 +1533,11 @@
   .lg\:gap-10 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 10);
+    }
+  }
+  .lg\:bg-repeat-y {
+    @media (width >= 64rem) {
+      background-repeat: repeat-y;
     }
   }
   .lg\:p-5 {

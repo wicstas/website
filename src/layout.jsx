@@ -4,7 +4,23 @@ import StarCanvas from './star.jsx';
 
 export default function Layout() {
   const [treeIndex, setTreeIndex] = useState(0);
-  const maxIndex = 10;
+  const maxTreeIndex = 18;
+
+  useEffect(() => {
+    if (treeIndex + 2 > maxTreeIndex)
+      return;
+    const nextSrc = `/foliage_pack/tree_${treeIndex + 2}.png`;
+
+    const img = new Image();
+    img.src = nextSrc;
+  }, [treeIndex]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTreeIndex((prev) => (prev + 1) % maxTreeIndex);
+    }, 1000);
+    return () => clearInterval(interval);
+  }, []);
 
   return <div className='flex flex-col w-screen h-screen font-shortstack'>
     <div className='flex h-[120%] lg:flex-row flex-col gap-5 lg:gap-10'>
@@ -18,7 +34,7 @@ export default function Layout() {
       </div>
 
 
-      <div className='lg:p-5 flex flex-col h-full flex-[4] lg:flex-[3]'>
+      <div className='flex flex-col h-full flex-[4] lg:flex-[3]'>
         <main className='grow'>
           <Outlet />
         </main>
@@ -27,9 +43,9 @@ export default function Layout() {
         </footer>
       </div>
 
-      <div className='flex-[1] h-full flex flex-row'>
-        <div className={`w-20 h-full bg-repeat-y bg-contain bg-[url('/foliage_pack/tree_0.png')]`}/>
-        <div className='w-full h-full'>
+      <div className='flex-[1] w-full lg:h-full flex flex-col lg:flex-row'>
+        <div className='h-20 w-full lg:w-20 lg:h-full bg-repeat-x lg:bg-repeat-y bg-contain' style={{ backgroundImage: `url('/foliage_pack/tree_${treeIndex + 1}.png')` }} />
+        <div className='h-20 w-full lg:w-auto lg:h-full'>
           <StarCanvas starCount={200} />
         </div>
       </div>
