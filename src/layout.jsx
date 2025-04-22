@@ -4,7 +4,7 @@ import StarCanvas from './star.jsx';
 export default function Layout() {
   return <div className='w-screen h-screen font-shortstack flex flex-col lg:flex-row'>
 
-      <div className='w-full lg:w-50 flex flex-col bg-base-200'>
+      <div className='w-full lg:w-70 flex flex-col bg-base-200'>
         <div className='h-20 bg-repeat-x bg-contain' style={{ backgroundImage: `url('/night_sky.png')` }} />
         <div className='h-2 w-full bg-primary'/>
         <nav className="flex flex-col font-thin gap-2">

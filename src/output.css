@@ -9,10 +9,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-sky-900: oklch(39.1% 0.09 240.876);
-    --color-sky-950: oklch(29.3% 0.066 243.157);
-    --color-blue-100: oklch(93.2% 0.032 255.585);
-    --color-blue-950: oklch(28.2% 0.091 267.935);
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
@@ -1339,14 +1335,8 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
-  .h-30 {
-    height: calc(var(--spacing) * 30);
-  }
   .h-40 {
     height: calc(var(--spacing) * 40);
-  }
-  .h-\[120\%\] {
-    height: 120%;
   }
   .h-auto {
     height: auto;
@@ -1362,9 +1352,6 @@
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
-  }
-  .w-50 {
-    width: calc(var(--spacing) * 50);
   }
   .w-auto {
     width: auto;
@@ -1554,11 +1541,6 @@
     --btn-color: var(--color-primary);
     --btn-fg: var(--color-primary-content);
   }
-  .lg\:relative {
-    @media (width >= 64rem) {
-      position: relative;
-    }
-  }
   .lg\:block {
     @media (width >= 64rem) {
       display: block;
@@ -1582,6 +1564,21 @@
   .lg\:w-50 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 50);
+    }
+  }
+  .lg\:w-60 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 60);
+    }
+  }
+  .lg\:w-70 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 70);
+    }
+  }
+  .lg\:w-100 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 100);
     }
   }
   .lg\:flex-\[3\] {
@@ -1782,8 +1779,8 @@
       --color-base-200: oklch(0.5 0.1049 172.79);
       --color-base-300: oklch(0.3 0.5 160);
       --color-base-content: oklch(0% 0.042 264.695);
-      --color-primary: oklch(0.36 0.41656 205.81);
-      --color-primary-content: #FFFD95;
+      --color-primary: oklch(0.45 0.1453 254.19);
+      --color-primary-content: oklch(0.97 0.1264 107.57);
       --color-secondary: oklch(0.57 0.17 25.68);
       --color-secondary-content: oklch(98% 0.003 247.858);
       --color-accent: oklch(84% 0.143 164.978);
@@ -1816,8 +1813,8 @@
     --color-base-200: oklch(0.5 0.1049 172.79);
     --color-base-300: oklch(0.3 0.5 160);
     --color-base-content: oklch(0% 0.042 264.695);
-    --color-primary: oklch(0.36 0.41656 205.81);
-    --color-primary-content: #FFFD95;
+    --color-primary: oklch(0.45 0.1453 254.19);
+    --color-primary-content: oklch(0.97 0.1264 107.57);
     --color-secondary: oklch(0.57 0.17 25.68);
     --color-secondary-content: oklch(98% 0.003 247.858);
     --color-accent: oklch(84% 0.143 164.978);
