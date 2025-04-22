@@ -10,6 +10,6 @@ let mind = <article>
 </article>
 
 export const blogs = [
-  { slug: 'mind', title: "A Petite Thought On Mind", content: mind },
+  { slug: 'thought-on-mind', title: "A Petite Thought On Mind", content: mind },
 ]
 export const titles = blogs.map((blog) => { return { slug: blog.slug, title: blog.title } });
