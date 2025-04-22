@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './home.jsx';
 import {Blog, BlogList} from './blog.jsx';
-import About from './about.jsx';
+import Me from './me.jsx';
 import Layout from './layout.jsx';
 
 import 'katex/dist/katex.min.css';
@@ -18,7 +18,7 @@ function App() {
           <Route index element={<Home/>} />
           <Route path="/blog/" element={<BlogList />} />
           <Route path="/blog/:slug" element={<Blog />} />
-          <Route path="/about" element={<About/>} />
+          <Route path="/me" element={<Me/>} />
         </Route>
       </Routes>
     </BrowserRouter>

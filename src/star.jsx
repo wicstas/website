@@ -50,7 +50,7 @@ useEffect(() => {
     draw();
     window.addEventListener("resize", resize);
     return () => window.removeEventListener("resize", resize);
-}, [starCount]);
+}, [starCount, canvasRef]);
 
 return (
     <canvas ref={canvasRef} className="w-full h-full block" />
