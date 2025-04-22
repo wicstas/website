@@ -8,6 +8,7 @@
     "katex": "^0.16.22",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-helmet": "^6.1.0",
     "react-router": "^6.30.0",
     "react-router-dom": "^6.30.0",
     "tailwindcss": "^4.1.4",

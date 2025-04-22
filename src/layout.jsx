@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import StarCanvas from './star.jsx';
 
