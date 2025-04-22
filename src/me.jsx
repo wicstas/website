@@ -7,9 +7,9 @@ export default function Me() {
 
       <div className='text-xl'>
       Uninteresting thingies:</div>
-      I'm proficient at C++, ok at Python and various common languages <br/>
-      I'm ok at math (being a math graduate), currently learning more advanced topics <br/>
-      I have 5 years amateur experience in computer graphics. <br/>
+      I'm proficient at modern C++<br/>
+      I'm good at math (as a math graduate)<br/>
+      I have 5 years amateur experience in computer graphics.<br/>
 
       <br/> If you hate me, or in the rare case, don't hate me, you can send me an email at:<br/>
       wicstas@gmail.com 
