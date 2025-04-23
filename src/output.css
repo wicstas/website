@@ -574,7 +574,7 @@
 }
 @font-face {
   font-family: 'Short Stack';
-  src: url('./font/ShortStack-Regular.ttf') format('truetype');
+  src: url('/font/ShortStack-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
