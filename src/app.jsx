@@ -6,7 +6,7 @@ import {Blog, BlogList} from './blog.jsx';
 import Me from './me.jsx';
 import Layout from './layout.jsx';
 
-import 'katex/dist/katex.min.css';
+import './output.css'
 
 function App() {
     const [blogIndex, setBlogIndex] = useState(-1);
