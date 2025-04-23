@@ -1438,8 +1438,14 @@
   .bg-primary {
     background-color: var(--color-primary);
   }
+  .bg-\[url\(\/starfield\.avif\)\] {
+    background-image: url(/starfield.avif);
+  }
   .bg-\[url\(\/starfield\.jpg\)\] {
     background-image: url(/starfield.jpg);
+  }
+  .bg-\[url\(\/starfield\.webp\)\] {
+    background-image: url(/starfield.webp);
   }
   .from-0\% {
     --tw-gradient-from-position: 0%;
