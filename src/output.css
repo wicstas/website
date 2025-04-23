@@ -1426,11 +1426,20 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .bg-\[\/starfield\.jpg\] {
+    background-color: /starfield.jpg;
+  }
+  .bg-\[starfield\.jpg\] {
+    background-color: starfield.jpg;
+  }
   .bg-base-200 {
     background-color: var(--color-base-200);
   }
   .bg-primary {
     background-color: var(--color-primary);
+  }
+  .bg-\[url\(\/starfield\.jpg\)\] {
+    background-image: url(/starfield.jpg);
   }
   .from-0\% {
     --tw-gradient-from-position: 0%;
@@ -1440,6 +1449,24 @@
   }
   .bg-contain {
     background-size: contain;
+  }
+  .bg-size-\[1px_auto\] {
+    background-size: 1px auto;
+  }
+  .bg-size-\[10px_auto\] {
+    background-size: 10px auto;
+  }
+  .bg-size-\[50px_auto\] {
+    background-size: 50px auto;
+  }
+  .bg-size-\[100px_auto\] {
+    background-size: 100px auto;
+  }
+  .bg-size-\[200px_auto\] {
+    background-size: 200px auto;
+  }
+  .bg-size-\[400px_auto\] {
+    background-size: 400px auto;
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
@@ -1561,24 +1588,9 @@
       width: calc(var(--spacing) * 40);
     }
   }
-  .lg\:w-50 {
-    @media (width >= 64rem) {
-      width: calc(var(--spacing) * 50);
-    }
-  }
-  .lg\:w-60 {
-    @media (width >= 64rem) {
-      width: calc(var(--spacing) * 60);
-    }
-  }
   .lg\:w-70 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 70);
-    }
-  }
-  .lg\:w-100 {
-    @media (width >= 64rem) {
-      width: calc(var(--spacing) * 100);
     }
   }
   .lg\:flex-\[3\] {
