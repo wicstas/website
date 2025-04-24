@@ -13,7 +13,20 @@ let mind = <article>
   </section>
 </article>
 
+let life = <article>
+  <header>
+    <h1 className="text-3xl">Self-modifying AI Life From Scratch</h1>
+    <br></br>
+    <time dateTime="2025-04-24">April 24, 2025</time>
+  </header >
+  <section className="indent-8">
+    <p >Yet to be written, stay tuned</p>
+  </section>
+</article>
+
 export const blogs = [
   { slug: 'thought-on-mind', title: "A Petite Thought On Mind", content: mind },
+  { slug: 'self-modifying-life', title: "Self-Modifying AI Life From Scratch", content: life}
 ]
+
 export const titles = blogs.map((blog) => { return { slug: blog.slug, title: blog.title } });

@@ -6,7 +6,7 @@ export default function Me() {
       <title>About that common Rui</title>
       <meta name="description" content="He is not for sale" />
     </Helmet>
-    <div className='font-bold p-5'>
+    <div className='p-5'>
       My full name is Rui Li and I'm chinese. <br />
       My best friend is a Bichon Frisé. He is with me 24/7 <br />
       I'm so bad at speaking, like, even in Chinese. <br /> <br />
