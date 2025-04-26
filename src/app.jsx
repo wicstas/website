@@ -1,20 +1,20 @@
-import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
-import React, { useState } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Home from './home.jsx';
-import {Blog, BlogList} from './blog.jsx';
+import { JournalEntry, Journal } from './journal.jsx';
 import Me from './me.jsx';
 import Layout from './layout.jsx';
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>  
-        <Route path='/' element={<Layout/>}>
-          <Route index element={<Home/>} />
-          <Route path="/blog/" element={<BlogList />} />
-          <Route path="/blog/:slug" element={<Blog />} />
-          <Route path="/me" element={<Me/>} />
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/journal/" element={<JournalEntry />} />
+          <Route path="journal/:slug" element={<Journal />} />
+          <Route path="/me" element={<Me />} />
         </Route>
       </Routes>
     </BrowserRouter>

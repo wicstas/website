@@ -33,7 +33,7 @@ export default function home() {
     <div className={`absolute z-0 h-10 w-full bg-repeat-x bg-contain`} style={{ backgroundImage: `url('/clouds/cloud_shape2_${cloud}.webp')` }} />
     <div className={`relative z-10 h-10 w-full lg:bg-gradient-to-r lg:from-transparent from-0% lg:via-transparent via-50% lg:to-base-100 lg:to-100%`}/>
     </div>
-      <div className={`px-10 py-5 text-3xl lg:text-4xl font-bold ${animate}`} onClick={triggerAnimation} onAnimationEnd={handleAnimationEnd}>A common Rui's blog</div>
+      <div className={`px-10 py-5 text-3xl lg:text-4xl font-bold ${animate}`} onClick={triggerAnimation} onAnimationEnd={handleAnimationEnd}>A Common Rui's Website</div>
       <div className='px-10'>How did you even find my website... are you a creep?</div>
   </div>;
 }

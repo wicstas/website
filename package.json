@@ -2,25 +2,24 @@
   "name": "my-website",
   "version": "1.0.0",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.4",
-    "@vitejs/plugin-react": "^4.4.1",
     "animate.css": "^4.1.1",
-    "katex": "^0.16.22",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-helmet": "^6.1.0",
     "react-router": "^6.30.0",
     "react-router-dom": "^6.30.0",
-    "tailwindcss": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  },
+  "devDependencies": {
+    "katex": "^0.16.22",
+    "@tailwindcss/cli": "^4.1.4",
+    "daisyui": "latest",
+    "@vitejs/plugin-react": "^4.4.1",
     "vite": "^6.3.2"
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
-  },
-  "devDependencies": {
-    "daisyui": "latest",
-    "vite": "^6.3.2"
   }
 }
