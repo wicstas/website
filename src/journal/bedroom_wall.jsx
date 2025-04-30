@@ -6,8 +6,8 @@ export default function BedroomWall() {
       <time dateTime="2025-04-26">April 26, 2025</time>
     </header >
     <section className="indent-8">
-      <img src='/wall0.webp' className="m-5 w-[80%] border-2"/>
-      <img src='/wall1.webp' className="m-5 w-[80%] border-2"/>
+      <img src='/wall0.webp' className="m-5 w-[80%] shadow-md"/>
+      <img src='/wall1.webp' className="m-5 w-[80%] shadow-md"/>
     </section>
   </article>
 }
