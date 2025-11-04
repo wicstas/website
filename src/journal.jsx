@@ -4,7 +4,7 @@ import { lazy, Suspense } from 'react';
 
 const journals = [
   { slug: 'thought-on-mind', title: "A Petite Thought On Mind", content: lazy(() => import('./journal/thought_on_mind.jsx')) },
-  { slug: 'ai-life', title: "Self-Modifying AI Life From Scratch", content: lazy(() => import('./journal/ai_life.jsx')) },
+  // { slug: 'ai-life', title: "Self-Modifying AI Life From Scratch", content: lazy(() => import('./journal/ai_life.jsx')) },
   { slug: 'bedroom-wall', title: "Some Images of a Lamp-lit Wall in my Bedroom", content: lazy(() => import('./journal/bedroom_wall.jsx')) },
 ]
 const titles = journals.map((x) => { return { slug: x.slug, title: x.title } });
